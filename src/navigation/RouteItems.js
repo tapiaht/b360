@@ -90,7 +90,7 @@ export const routes = [
     showInTab: false,
     showInDrawer: true,
     icon: (focused) =>
-      <Icon name="star" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="glass" size={30} color={focused ? '#551E18' : '#000'} />,
   },
   {
     name: screens.MyRewards,
@@ -99,7 +99,7 @@ export const routes = [
     showInTab: false,
     showInDrawer: false,
     icon: (focused) =>
-      <Icon name="star" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="glass" size={30} color={focused ? '#551E18' : '#000'} />,
   },
 
   {
@@ -109,7 +109,7 @@ export const routes = [
     showInTab: false,
     showInDrawer: true,
     icon: (focused) =>
-      <Icon name="map-marker" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="bed" size={30} color={focused ? '#551E18' : '#000'} />,
   },
   {
     name: screens.Locations,
@@ -118,6 +118,6 @@ export const routes = [
     showInTab: false,
     showInDrawer: false,
     icon: (focused) =>
-      <Icon name="map-marker" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="bed" size={30} color={focused ? '#551E18' : '#000'} />,
   },
 ]

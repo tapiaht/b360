@@ -26,9 +26,12 @@ const CustomDrawerContent = (props) => {
                   {route.title}
                 </Text>
               )}
+
+              icon={route.icon}
               onPress={() => props.navigation.navigate(route.name)}
               style={[styles.drawerItem, focused ? styles.drawerItemFocused : null]}
             />
+
           )
         })
       }
