@@ -22,7 +22,7 @@ export default function App() {
     </View> */}
     {/* <NavigationStack/> */}
     <NavigationTab/>
-    <NavigationDrawer/>
+    {/* <NavigationDrawer/> */}
 
     </NavigationContainer>
   );

@@ -1,4 +1,4 @@
-import { View, Text, Button, SafeAreaView } from 'react-native'
+import { Text, Button, SafeAreaView } from 'react-native'
 import React from 'react'
 
 export default function HomeScreen(props) {
