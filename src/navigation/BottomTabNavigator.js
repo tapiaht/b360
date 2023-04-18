@@ -3,10 +3,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Text, StyleSheet, View } from 'react-native'
 
 import HomeStackNavigator from './stack-navigators/HomeStackNavigator'
-import BookStackNavigator from './stack-navigators/BookStackNavigator'
-import ContactStackNavigator from './stack-navigators/ContactStackNavigator'
-import MyRewardsStackNavigator from './stack-navigators/MyRewardsStackNavigator'
-import LocationsStackNavigator from './stack-navigators/LocationsStackNavigator'
+import AdviceStackNavigator from './stack-navigators/AdviceStackNavigator'
+import ProfileStackNavigator from './stack-navigators/ProfileStackNavigator'
+import WaterStackNavigator from './stack-navigators/WaterStackNavigator'
+import BreakStackNavigator from './stack-navigators/BreakStackNavigator'
 import { routes, screens } from './RouteItems'
 
 const Tab = createBottomTabNavigator()
@@ -38,11 +38,11 @@ const BottomTabNavigator = () => {
   return (
     <Tab.Navigator screenOptions={tabOptions}>
       <Tab.Screen name={screens.HomeStack} component={HomeStackNavigator} />
-      <Tab.Screen name={screens.BookStack} component={BookStackNavigator} />
-      <Tab.Screen name={screens.ContactStack} component={ContactStackNavigator} />
+      <Tab.Screen name={screens.BookStack} component={AdviceStackNavigator} />
+      <Tab.Screen name={screens.ContactStack} component={ProfileStackNavigator} />
 
-      <Tab.Screen name={screens.MyRewardsStack} component={MyRewardsStackNavigator} />
-      <Tab.Screen name={screens.LocationsStack} component={LocationsStackNavigator} />
+      <Tab.Screen name={screens.MyRewardsStack} component={WaterStackNavigator} />
+      <Tab.Screen name={screens.LocationsStack} component={BreakStackNavigator} />
     </Tab.Navigator>
   )
 }

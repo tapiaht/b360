@@ -47,46 +47,46 @@ export const routes = [
   {
     name: screens.BookStack,
     focusedRoute: screens.BookStack,
-    title: 'Book Room',
+    title: 'Consejos',
     showInTab: true,
     showInDrawer: false,
     icon: (focused) =>
-      <Icon name="bed" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="bullhorn" size={30} color={focused ? '#551E18' : '#000'} />,
   },
 
   {
     name: screens.Book,
     focusedRoute: screens.BookStack,
-    title: 'Book Room',
+    title: 'Consejos',
     showInTab: true,
     showInDrawer: false,
     icon: (focused) =>
-      <Icon name="bed" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="bullhorn" size={30} color={focused ? '#551E18' : '#000'} />,
   },
 
   {
     name: screens.ContactStack,
     focusedRoute: screens.ContactStack,
-    title: 'Contact Us',
+    title: 'Perfil',
     showInTab: true,
     showInDrawer: false,
     icon: (focused) =>
-      <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="user-circle" size={30} color={focused ? '#551E18' : '#000'} />,
   },
   {
     name: screens.Contact,
     focusedRoute: screens.ContactStack,
-    title: 'Contact Us',
+    title: 'Perfil',
     showInTab: false,
     showInDrawer: false,
     icon: (focused) =>
-      <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'} />,
+      <Icon name="user-circle" size={30} color={focused ? '#551E18' : '#000'} />,
   },
 
   {
     name: screens.MyRewardsStack,
     focusedRoute: screens.MyRewardsStack,
-    title: 'My Rewards',
+    title: 'Agua',
     showInTab: false,
     showInDrawer: true,
     icon: (focused) =>
@@ -95,7 +95,7 @@ export const routes = [
   {
     name: screens.MyRewards,
     focusedRoute: screens.MyRewardsStack,
-    title: 'My Rewards',
+    title: 'Agua Pantalla',
     showInTab: false,
     showInDrawer: false,
     icon: (focused) =>
@@ -105,7 +105,7 @@ export const routes = [
   {
     name: screens.LocationsStack,
     focusedRoute: screens.LocationsStack,
-    title: 'Locations',
+    title: 'Descanzo',
     showInTab: false,
     showInDrawer: true,
     icon: (focused) =>
@@ -114,7 +114,7 @@ export const routes = [
   {
     name: screens.Locations,
     focusedRoute: screens.LocationsStack,
-    title: 'Locations',
+    title: 'Descanzo',
     showInTab: false,
     showInDrawer: false,
     icon: (focused) =>

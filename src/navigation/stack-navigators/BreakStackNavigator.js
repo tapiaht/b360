@@ -6,20 +6,20 @@ import { screens } from '../RouteItems'
 
 const Stack = createStackNavigator()
 
-const MyRewards = () => (
+const Locations = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>MyRewards screen!</Text>
+    <Text>Descanzo screen!</Text>
   </View>
 )
 
-const MyRewardsStackNavigator = () => {
+const BreakStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{
       headerShown: false,
     }}>
-      <Stack.Screen name={screens.MyRewards} component={MyRewards} />
+      <Stack.Screen name={screens.Locations} component={Locations} />
     </Stack.Navigator>
   )
 }
 
-export default MyRewardsStackNavigator
+export default BreakStackNavigator

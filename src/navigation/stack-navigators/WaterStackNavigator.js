@@ -6,20 +6,20 @@ import { screens } from '../RouteItems'
 
 const Stack = createStackNavigator()
 
-const Contact = () => (
+const MyRewards = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Contact screen!</Text>
+    <Text>Agua screen!</Text>
   </View>
 )
 
-const ContactStackNavigator = () => {
+const WaterStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{
       headerShown: false,
     }}>
-      <Stack.Screen name={screens.Contact} component={Contact} />
+      <Stack.Screen name={screens.MyRewards} component={MyRewards} />
     </Stack.Navigator>
   )
 }
 
-export default ContactStackNavigator
+export default WaterStackNavigator
