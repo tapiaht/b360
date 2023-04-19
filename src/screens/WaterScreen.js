@@ -8,7 +8,7 @@ export default function WaterScreen(props) {
     }
   return (
     <SafeAreaView>
-      <Text>Agua</Text>
+      <Text>Aguaaaaaa</Text>
       <Text>Agua</Text>
       <Text>Agua</Text>
       <Text>Agua</Text>
