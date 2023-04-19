@@ -11,6 +11,7 @@ const MyRewards = () => (
     <Text>Agua screen!</Text>
     <Text>Agua screen!</Text>
     <Text>Agua screen!</Text>
+  
 
   </View>
 )
