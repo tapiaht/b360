@@ -9,6 +9,9 @@ const Stack = createStackNavigator()
 const MyRewards = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Agua screen!</Text>
+    <Text>Agua screen!</Text>
+    <Text>Agua screen!</Text>
+
   </View>
 )
 
