@@ -57,7 +57,10 @@ const DrawerNavigator = ({ nav }) => {
     >
       <Drawer.Screen name={screens.HomeTab} component={BottomTabNavigator} options={{
         title: 'Home',
-        headerTitle: () => <Image source={require('../assets/hotel_logo.jpg')} />,
+        headerTitle: () => (
+        // <Image source={require('../assets/hotel_logo.jpg')} />
+        <Text style={styles.headerTitle}>8 REMEDIOS NATURALES</Text>
+        ),
         headerRight: () => (
           <View style={styles.headerRight}>
             <Icon name="bell" size={20} color="#fff" />
