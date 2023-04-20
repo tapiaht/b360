@@ -9,6 +9,10 @@ const Stack = createStackNavigator()
 const Locations = () => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>Descanzo screen!</Text>
+    <Text>Descanzo screen!</Text>
+    <Text>Descanzo screen!</Text>
+    <Text>Descanzo screen!</Text>
+    <Text>Descanzo screen!</Text>
   </View>
 )
 
