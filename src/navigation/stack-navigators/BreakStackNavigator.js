@@ -1,18 +1,55 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text,Image,StyleSheet} from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
-
 import { screens } from '../RouteItems'
 
 const Stack = createStackNavigator()
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  imageContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginBottom: 16,
+    textAlign: 'center',
+    textTransform: 'uppercase',
+  },
+  image: {
+    width: 200,
+    height: 600,
+  }, 
+  clockContainer: {
+    backgroundColor: 'white',
+    borderRadius: 8,
+    padding: 8,
+    margin: 16,
+  },
+   clock: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: 'black',
+  },
+});
+
 const Locations = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Descanzo screen!</Text>
-    <Text>Descanzo screen!</Text>
-    <Text>Descanzo screen!</Text>
-    <Text>Descanzo screen!</Text>
-    <Text>Descanzo screen!</Text>
+  <View style={styles.container}>
+      <Text style={styles.title}>Reto Del Dia!</Text>
+      <View style={styles.imageContainer}>
+        <Image source={require('../../assets/imagenDurmiendo.jpg')} style={styles.image} />
+
+        <View style={styles.clockContainer}>
+         <Text style={styles.clock}>10:20:00 ss</Text>
+        </View>
+      </View>
   </View>
 )
 
