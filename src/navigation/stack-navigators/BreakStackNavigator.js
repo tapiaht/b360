@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text,Image,StyleSheet} from 'react-native'
+import { View, Text,Image,StyleSheet,Button} from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { screens } from '../RouteItems'
 
@@ -27,6 +27,11 @@ const styles = StyleSheet.create({
     width: 200,
     height: 600,
   }, 
+  container2: {
+    borderRadius: 8,
+    padding: 8,
+    margin: 16,
+  },
   clockContainer: {
     backgroundColor: 'white',
     borderRadius: 8,
@@ -44,11 +49,15 @@ const Locations = () => (
   <View style={styles.container}>
       <Text style={styles.title}>Reto Del Dia!</Text>
       <View style={styles.imageContainer}>
-        <Image source={require('../../assets/imagenDurmiendo.jpg')} style={styles.image} />
+        <Image source={require('../../assets/img1.png')} style={styles.image} />
 
-        <View style={styles.clockContainer}>
-         <Text style={styles.clock}>10:20:00 ss</Text>
+        <View style={styles.container2}>
+          <View style={styles.clockContainer}>
+          <Text style={styles.clock}>10:20:00 ss</Text>
+          </View>
+          <Button title="Dormir"/>
         </View>
+
       </View>
   </View>
 )
