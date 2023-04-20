@@ -20,11 +20,22 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "googleServicesFile": "./google-services.json"
+      },
+      "package": "com.hit7.b360"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9609ec26-5bf9-4ddf-809c-90a58852415f"
+      }
+    },
+    "plugins": [
+      "expo-build-properties",
+      "@react-native-google-signin/google-signin"
+    ]
   }
 }
